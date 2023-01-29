@@ -20,7 +20,7 @@ function createBoxGallery(galleryItems){
   .join('');
 }
 
-const galleryBoxModal = new SimpleGalleryBox('.gallery a',{
+const galleryBoxModal = new SimpleLightBox('.gallery a',{
     captionsData : 'alt',
     captionsDelay: 300,
 })
