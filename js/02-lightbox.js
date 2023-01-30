@@ -4,10 +4,10 @@ import { galleryItems } from './gallery-items.js';
 console.log(galleryItems);
 
 const galleryBoxRef = document.querySelector('.gallery');
-const galleryBoxMarkup = createBoxGallery(galleryItems);
+const galleryBoxMarkup = createBoxItem(galleryItems);
 galleryBoxRef.insertAdjacentHTML('afterbegin',galleryBoxMarkup);
 
-function createBoxGallery(galleryItems){
+function createBoxItem(galleryItems){
     return galleryItems.map(({ preview, original, description }) =>
     `<a class="gallery__link" href="${original}">
     <img
@@ -20,7 +20,8 @@ function createBoxGallery(galleryItems){
   .join('');
 }
 
-const galleryBoxModal = new SimpleLightBox('.gallery a',{
+const galleryBoxModal = new SimpleLightbox('.gallery a',
+{
     captionsData : 'alt',
     captionsDelay: 300,
 })
