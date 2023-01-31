@@ -30,7 +30,7 @@ galleryRef.addEventListener("click", galleryClick);
 
 let modalGallery;
 
-function ogalleryClick(event) {
+function galleryClick(event) {
   event.preventDefault();
   if (event.target.nodeName !== "IMG") {
     return;
