@@ -47,7 +47,7 @@ onclose : modalGallery =>
  }
  );
   function onEscKeyPress(e) {
-    if (evt.code === "Escape" && basicLightbox.visible()) {
+    if (e.code === "Escape" && basicLightbox.visible()) {
       modalGallery.close();
     }
   }
