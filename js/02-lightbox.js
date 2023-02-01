@@ -23,5 +23,5 @@ function createBoxItem(galleryItems){
 const galleryBoxModal = new SimpleLightbox('.gallery a',
 {
     captionsData : 'alt',
-    captionsDelay: 300,
+    captionsDelay: 250,
 })
